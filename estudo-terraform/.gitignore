@@ -1,0 +1,34 @@
+# =============================================================================
+# GITIGNORE para projetos Terraform
+# =============================================================================
+# CRÍTICO: Nunca commitar state files — contêm dados sensíveis em plain text
+# (ARNs, IPs, às vezes passwords dependendo do provider)
+# =============================================================================
+
+# State files — NUNCA versionar
+*.tfstate
+*.tfstate.*
+
+# Diretório de cache do Terraform (providers baixados, módulos)
+.terraform/
+
+# Lock file do provider — ESTE DEVE SER COMMITADO (garante versões exatas)
+# NÃO adicione .terraform.lock.hcl aqui!
+
+# Arquivos de variáveis com secrets
+*.tfvars.secret
+secret.tfvars
+
+# Crash logs
+crash.log
+crash.*.log
+
+# Plan files (podem conter dados sensíveis)
+*.tfplan
+out.plan
+
+# Override files (uso local)
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
