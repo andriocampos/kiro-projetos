@@ -170,4 +170,18 @@ variable "count" { }   # Aceita qualquer coisa — perigoso
 
 ---
 
+---
+
+## Exercício Prático
+
+1. Crie variáveis com tipos: `string`, `number`, `bool`, `list(string)`, `map(string)`, `object`
+2. Adicione `validation` na variável de environment (aceitar só dev/staging/prod)
+3. Adicione `validation` em um CIDR block usando `can(cidrhost(...))`
+4. Crie um `terraform.tfvars` com valores e rode `terraform plan`
+5. Sobrescreva uma variável via CLI: `terraform plan -var="environment=prod"`
+6. Sobrescreva via env var: `export TF_VAR_environment="staging"` e veja qual vence
+7. Crie locals que derivem: `name_prefix`, `is_production`, e `instance_type` condicional
+
+---
+
 ## Anterior: [03 — Providers](./03-providers.md) | Próximo: [05 — Resources](./05-resources.md)

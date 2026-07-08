@@ -120,4 +120,26 @@ terraform version
 
 ---
 
+---
+
+## Exercício Prático
+
+1. Instale o Terraform (use `tfenv` para gerenciar versões)
+2. Crie uma pasta vazia e um arquivo `main.tf` com apenas:
+   ```hcl
+   terraform {
+     required_version = ">= 1.5.0"
+   }
+
+   output "hello" {
+     value = "Terraform funcionando!"
+   }
+   ```
+3. Rode `terraform init` → `terraform plan` → `terraform apply`
+4. Veja o output no terminal
+5. Rode `terraform destroy`
+6. Observe que o ciclo `init → plan → apply → destroy` é a base de TUDO
+
+---
+
 ## Próximo: [02 — Estrutura de Projeto](./02-estrutura-projeto.md)

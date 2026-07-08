@@ -186,4 +186,18 @@ O que terraform plan mostra:
 
 ---
 
+---
+
+## Exercício Prático
+
+1. Crie outputs para: bucket name, bucket arn, e um output sensitive
+2. Rode `terraform apply` e veja os outputs no terminal
+3. Rode `terraform output` e `terraform output -json`
+4. Rode `terraform state list` para ver os resources no state
+5. Rode `terraform state show aws_s3_bucket.this` para ver detalhes
+6. Faça uma mudança manual no console (adicione tag) e rode `terraform plan`
+7. Observe a mensagem de drift e o que o Terraform propõe fazer
+
+---
+
 ## Anterior: [05 — Resources](./05-resources.md) | Início: [README](../README.md)

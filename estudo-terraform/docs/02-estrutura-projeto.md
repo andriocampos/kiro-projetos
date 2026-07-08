@@ -126,4 +126,18 @@ terraform apply -var-file="environments/dev.tfvars"
 
 ---
 
+---
+
+## Exercício Prático
+
+1. Crie um novo diretório `exercicio-estrutura/`
+2. Crie os 5 arquivos padrão: `providers.tf`, `variables.tf`, `locals.tf`, `main.tf`, `outputs.tf`
+3. Em `variables.tf`, declare: `project_name` (string), `environment` (string com validation), `tags` (map)
+4. Em `locals.tf`, compute `name_prefix` a partir das variáveis
+5. Em `main.tf`, crie um `aws_s3_bucket` usando `local.name_prefix`
+6. Rode `terraform validate` — deve passar sem erros
+7. Agora coloque tudo em um arquivo só e compare: qual é mais fácil de navegar?
+
+---
+
 ## Anterior: [01 — Fundamentos](./01-fundamentos.md) | Próximo: [03 — Providers](./03-providers.md)

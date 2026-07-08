@@ -19,7 +19,7 @@ Terraform é uma ferramenta de **Infrastructure as Code (IaC)** criada pela Hash
 
 ## 📋 Índice do Módulo
 
-### Teoria (pasta `docs/`)
+### Fase 1 — Fundação
 
 | # | Documento | Conteúdo |
 |---|-----------|----------|
@@ -29,6 +29,31 @@ Terraform é uma ferramenta de **Infrastructure as Code (IaC)** criada pela Hash
 | 4 | [Variables e Locals](./docs/04-variables-locals.md) | Inputs, tipos, validações, precedência |
 | 5 | [Resources](./docs/05-resources.md) | Ciclo de vida, meta-arguments, dependências |
 | 6 | [Outputs e State](./docs/06-outputs-state.md) | Exposição de dados, state file, remote state |
+
+### Fase 2 — Composição
+
+| # | Documento | Conteúdo |
+|---|-----------|----------|
+| 7 | [Data Sources](./docs/07-data-sources.md) | Consultas read-only, AMIs, AZs, remote state |
+| 8 | [Módulos](./docs/08-modulos.md) | Criação, estrutura, versionamento, composição |
+| 9 | [Expressions e Funções](./docs/09-expressions-funcoes.md) | For, splat, condicionais, built-in functions |
+| 10 | [Ambientes](./docs/10-ambientes.md) | Var-files, workspaces, diretórios + módulos |
+
+### Fase 3 — Produção
+
+| # | Documento | Conteúdo |
+|---|-----------|----------|
+| 11 | [Backend Remoto](./docs/11-backend-remoto.md) | S3 + DynamoDB, locking, migração |
+| 12 | [IAM e Segurança](./docs/12-iam-seguranca.md) | Roles, policies, secrets, least privilege |
+| 13 | [CI/CD](./docs/13-cicd.md) | GitHub Actions, OIDC, plan em PRs |
+
+### Fase 4 — Avançado
+
+| # | Documento | Conteúdo |
+|---|-----------|----------|
+| 14 | [Import e Refactoring](./docs/14-import-refactoring.md) | Import blocks, moved, state surgery |
+| 15 | [Testing](./docs/15-testing.md) | Validate, tflint, terraform test, terratest |
+| 16 | [Troubleshooting](./docs/16-troubleshooting.md) | 10 erros comuns, debugging, emergência |
 
 ### Código Prático
 
@@ -75,10 +100,10 @@ terraform destroy
 
 ## 🎯 Roadmap de Estudo
 
-- [x] Fase 1 — Fundação (estrutura, providers, variables)
-- [ ] Fase 2 — Composição (data sources, módulos, environments)
-- [ ] Fase 3 — Produção (CI/CD, remote state, segurança avançada)
-- [ ] Fase 4 — Avançado (workspaces, import, moved blocks, testing)
+- [x] Fase 1 — Fundação (estrutura, providers, variables, resources, state)
+- [x] Fase 2 — Composição (data sources, módulos, funções, environments)
+- [x] Fase 3 — Produção (backend remoto, IAM/segurança, CI/CD)
+- [x] Fase 4 — Avançado (import/refactoring, testing, troubleshooting)
 
 ---
 

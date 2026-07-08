@@ -188,4 +188,18 @@ Data sources são **read-only** — consultam informação sem gerenciar o recur
 
 ---
 
+---
+
+## Exercício Prático
+
+1. Crie 3 buckets S3 usando `for_each` com um map de nomes
+2. Adicione `lifecycle { prevent_destroy = true }` em um deles
+3. Crie um data source que busque as AZs da região
+4. Use `depends_on` para forçar ordem entre dois resources
+5. Crie um resource com `count` controlado por variável bool (0 ou 1)
+6. Referência cross-resource: crie um bucket e uma policy que referencia o ARN do bucket
+7. Rode `terraform plan` e identifique na saída: `+` (create), `~` (update), `-` (destroy)
+
+---
+
 ## Anterior: [04 — Variables e Locals](./04-variables-locals.md) | Próximo: [06 — Outputs e State](./06-outputs-state.md)

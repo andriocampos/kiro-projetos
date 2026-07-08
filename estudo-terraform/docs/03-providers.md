@@ -145,4 +145,18 @@ terraform init -upgrade      # Atualizar providers
 
 ---
 
+---
+
+## Exercício Prático
+
+1. Configure o provider AWS no seu projeto com `default_tags`
+2. Trave a versão com `~> 5.0`
+3. Rode `terraform init` e verifique que `.terraform.lock.hcl` foi criado
+4. Abra o lock file e identifique a versão exata instalada
+5. Crie um provider com `alias = "secondary"` em outra região
+6. Crie um bucket usando o provider secundário com `provider = aws.secondary`
+7. Rode `terraform providers` e veja os dois listados
+
+---
+
 ## Anterior: [02 — Estrutura de Projeto](./02-estrutura-projeto.md) | Próximo: [04 — Variables e Locals](./04-variables-locals.md)

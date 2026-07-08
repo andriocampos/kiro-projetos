@@ -28,22 +28,31 @@ Cada pasta é um módulo de estudo independente, estruturado em formato de curso
 ```
 kiro-projetos/
 ├── README.md                    ← Você está aqui (índice geral)
-├── estudo-terraform/            ← Módulo 1: Terraform
-│   ├── README.md                ← Índice do módulo
-│   ├── docs/                    ← Teoria detalhada
-│   │   ├── 01-fundamentos.md
-│   │   ├── 02-estrutura-projeto.md
-│   │   ├── 03-providers.md
-│   │   ├── 04-variables-locals.md
-│   │   ├── 05-resources.md
-│   │   └── 06-outputs-state.md
-│   ├── providers.tf
-│   ├── variables.tf
-│   ├── locals.tf
-│   ├── main.tf
-│   ├── outputs.tf
-│   └── terraform.tfvars
-└── (futuros módulos...)
+└── estudo-terraform/            ← Módulo 1: Terraform
+    ├── README.md                ← Índice do módulo
+    ├── docs/                    ← Teoria detalhada (16 capítulos)
+    │   ├── 01-fundamentos.md
+    │   ├── 02-estrutura-projeto.md
+    │   ├── 03-providers.md
+    │   ├── 04-variables-locals.md
+    │   ├── 05-resources.md
+    │   ├── 06-outputs-state.md
+    │   ├── 07-data-sources.md
+    │   ├── 08-modulos.md
+    │   ├── 09-expressions-funcoes.md
+    │   ├── 10-ambientes.md
+    │   ├── 11-backend-remoto.md
+    │   ├── 12-iam-seguranca.md
+    │   ├── 13-cicd.md
+    │   ├── 14-import-refactoring.md
+    │   ├── 15-testing.md
+    │   └── 16-troubleshooting.md
+    ├── providers.tf
+    ├── variables.tf
+    ├── locals.tf
+    ├── main.tf
+    ├── outputs.tf
+    └── terraform.tfvars
 ```
 
 ---
